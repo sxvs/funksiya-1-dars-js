@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light/Dark Mode</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #c5bfb1; /* Светлый фон */
+      }
+      nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: black; /* Тёмные надписи по умолчанию */
+      }
+      .mode-button {
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+      }
+      .light {
+        background-color: orange;
+        color: black;
+      }
+      .dark {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div>Logo</div>
+      <div>
+        <a href="#">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Portfolio</a>
+      </div>
+      <div>
+        <button id="lightMode" class="mode-button light">LightMode</button>
+        <button id="darkMode" class="mode-button dark">DarkMode</button>
+      </div>
+    </nav>
+  </body>
+  <script src="./main.js"></script>
+</html>
